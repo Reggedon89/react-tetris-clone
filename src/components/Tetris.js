@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+// import Sound from "react-sound";
+// import boop from "../sounds/Blop-Mark_DiAngelo-79054334.mp3";
 import { createStage, checkCollision } from "../gameHelpers";
 
 // Styled Components
@@ -118,6 +119,12 @@ const Tetris = () => {
           )}
           <StartButton callback={startGame} />
         </aside>
+        {/* <Sound
+          url={boop}
+          playStatus={Sound.status.PLAYING}
+          loop={true}
+          // playFromPosition={300 /* in milliseconds */}
+        /> */}
       </StyledTetris>
     </StyledTetrisWrapper>
   );
