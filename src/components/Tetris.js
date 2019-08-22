@@ -115,6 +115,11 @@ const Tetris = () => {
               <Display text={`Score: ${score}`} />
               <Display text={`Rows: ${rows}`} />
               <Display text={`Level: ${level}`} />
+              <Display text="Press Left Arrow To Go Left And Press Right Arrow Key To Go Right" />
+
+              <Display text="Press up arrow to rotate Press down to drop faster" />
+
+              {/* Add Button later */}
             </div>
           )}
           <StartButton callback={startGame} />
